@@ -1,0 +1,139 @@
+.chardinjs-overlay {
+  position: absolute;
+  z-index: 999999;
+  background-color: #000;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out; }
+
+.chardinjs-helper-layer {
+  position: absolute;
+  z-index: 9999998;
+  color: white;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out; }
+  .chardinjs-helper-layer.chardinjs-left {
+    /*border-left: solid white 1px;*/
+    /*margin-left: -10px;*/
+    /*margin-left: 64px;*/
+     }
+  .chardinjs-helper-layer.chardinjs-right {
+    /*border-right: solid white 1px;*/
+    padding-right: 10px; }
+  .chardinjs-helper-layer.chardinjs-bottom {
+    /*border-bottom: solid white 1px;*/
+    /*padding-bottom: 10px; */
+    margin-top: -15px;}
+  .chardinjs-helper-layer.chardinjs-top {
+    /*border-top: solid white 1px;*/
+    padding-top: 10px; }
+
+.chardinjs-tooltip {
+  position: absolute;
+  -webkit-transition: opacity 0.1s ease-out;
+  -moz-transition: opacity 0.1s ease-out;
+  -ms-transition: opacity 0.1s ease-out;
+  -o-transition: opacity 0.1s ease-out;
+  transition: opacity 0.1s ease-out;
+  max-width: 200px; }
+  .chardinjs-tooltip.chardinjs-left {
+    margin-left: -135px;
+    padding-right: 10px; }
+  .chardinjs-tooltip.chardinjs-right {
+    margin-right: -135px;
+    padding-left: 10px; }
+  .chardinjs-tooltip.chardinjs-bottom {
+    margin-bottom: -50px;
+    padding-top: 10px; }
+  .chardinjs-tooltip.chardinjs-top {
+    margin-top: -50px;
+    padding-bottom: 10px; }
+  .chardinjs-tooltip.chardinjs-right:before, .chardinjs-tooltip.chardinjs-left:before, .chardinjs-tooltip.chardinjs-bottom:before, .chardinjs-tooltip.chardinjs-top:before {
+    content: ".";
+    display: inline-block;
+    background-color: white;
+    height: 1px;
+    overflow: hidden;
+    position: absolute; }
+  .chardinjs-tooltip.chardinjs-left:after {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 7px;
+  background: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: -104px;
+  margin-top: -3px;
+  }
+  .chardinjs-tooltip.chardinjs-right:after {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 7px;
+  background: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -129px;
+  margin-top: -3px;
+  }
+  .chardinjs-tooltip.chardinjs-bottom:after {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 7px;
+  background: white;
+  /*border:4px solid white;*/
+  border-radius: 50%;
+  position: absolute;
+  top: -56px;
+  left: 50%;
+  margin-left: -3px;
+  }
+   .chardinjs-tooltip.chardinjs-top:after {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 7px;
+  background: white;
+  /*border:4px solid white;*/
+  border-radius: 50%;
+  position: absolute;
+  bottom: -56px;
+  left: 50%;
+  margin-left: -3px;
+  }
+  .chardinjs-tooltip.chardinjs-right:before, .chardinjs-tooltip.chardinjs-left:before {
+    width: 125px;
+    top: 50%; }
+ /*   .chardinjs-tooltip.chardinjs-right:before {
+      top: -11px; }*/
+  .chardinjs-tooltip.chardinjs-bottom:before, .chardinjs-tooltip.chardinjs-top:before {
+    width: 1px;
+    height: 50px;
+    left: 50%; }
+  .chardinjs-tooltip.chardinjs-bottom:before {
+    top: -50px; }
+  .chardinjs-tooltip.chardinjs-top:before {
+    bottom: -50px; }
+  .chardinjs-tooltip.chardinjs-right:before {
+    left: -125px; }
+  .chardinjs-tooltip.chardinjs-left:before {
+    right: -100px; }
+
+.chardinjs-show-element {
+  z-index: 9999999;
+  opacity: 0.8; }
+
+.chardinjs-relative-position {
+  position: relative; }
